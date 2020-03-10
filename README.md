@@ -1,9 +1,12 @@
 This repository is for the basic understanding of graphQL CRUD operations.
+![options](assets/options.JPG)
+![options](assets/structure.JPG)
 
-#Getall users
+#GetAll users
 http://localhost:3000/users
 
 #Get user with specific ID 
+```js
 {
   user(id: "23") {
     id
@@ -15,8 +18,10 @@ http://localhost:3000/users
     }
   }
 }
+```
 
 #Get all users in company with specific ID
+```js
 {
   company(id:"1") {
 		users {
@@ -25,8 +30,10 @@ http://localhost:3000/users
 		}
   }
 }
+```
 
 #Add User and output id, firstname,age
+```js
 mutation {
   addUser(firstName:"Jane Doe",age:28){
     id
@@ -34,16 +41,19 @@ mutation {
     age
   }
 }
-
+```
 
 #Delete user by ID
+```js
 mutation {
   deleteUser(id:"RPHcuVk") { //add id here
     id
   } 
 }
+```
 
 #Edit user
+```js
 mutation {
   editUser(id:"uiVtkA5",firstName:"Reva",age:28){
     id
@@ -51,3 +61,4 @@ mutation {
     age
   }
 }
+```

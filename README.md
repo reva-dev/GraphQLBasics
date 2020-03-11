@@ -2,6 +2,11 @@ This repository is for the basic understanding of graphQL CRUD operations.
 ![options](assets/options.JPG)
 ![options](assets/structure.JPG)
 
+Run Application   
+1st Terminal: npm run json:server  
+2nd Terminal: node server.js  
+
+
 #GetAll users
 http://localhost:3000/users
 
